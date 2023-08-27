@@ -47,16 +47,86 @@
                     <a href="tel:+110001111111" class="info">+11 (000) 111-11-11</a>
                 </li>
             </ul>
-        </div>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-icon" width="32" height="32">
+                    <use href="./images/icons.svg#hamburger-open"></use>
+                </svg>
+            </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <div class="container container-menu">
+                    <button class="menu-toggle hamburger-close-button js-close-menu">
+                        <svg class="menu-icon" width="32" height="32">
+                            <use href="./images/icons.svg#hamburger-close"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="hamburger-menu-list lists">
+                        <li class="hamburger-menu-item">
+                            <a href="./index.html" class="hamburger-menu-link link menu-active">Studio</a>
+                        </li>
+                        <li class="hamburger-menu-item">
+                            <a href="./portfolio.html" class="hamburger-menu-link link">Portfolio</a>
+                        </li>
+                        <li class="hamburger-menu-item">
+                            <a href="#" class="hamburger-menu-link link">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger-wrapper">
+                        <address class="hamburger-address">
+                            <ul class="hamburger-address-list lists">
+                                <li class="hamburger-address-item">
+                                    <a href="tel:+110001111111" class="hamburger-address-link highlight link"
+                                        target="_blank" rel="noopener noreferrer">+11 (000) 111-11-11</a>
+                                </li>
+                                <li class="hamburger-address-item">
+                                    <a href="mailto:info@devstudio.com" class="hamburger-address-link link"
+                                        target="_blank" rel="noopener noreferrer">info@devstudio.com</a>
+                                </li>
+                            </ul>
+                        </address>
+
+                        <ul class="hamburger-social-list lists">
+                            <li class="hamburger-social-item">
+                                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                                    class="hamburger-social-link link"><svg class="hamburger-social-icon" width="16"
+                                        height="16">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg></a>
+                            </li>
+                            <li class="hamburger-social-item">
+                                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"
+                                    class="hamburger-social-link link"><svg class="hamburger-social-icon" width="16"
+                                        height="16">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg></a>
+                            </li>
+                            <li class="hamburger-social-item">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                                    class="hamburger-social-link link"><svg class="hamburger-social-icon" width="16"
+                                        height="16">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg></a>
+                            </li>
+                            <li class="hamburger-social-item">
+                                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                                    class="hamburger-social-link link"><svg class="hamburger-social-icon" width="16"
+                                        height="16">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
     </header>
     <!-- Main Page -->
     <main>
         <!-- Hero Image -->
         <section class="hero section">
             <div class="container hero-container">
-                <h1 class="hero-title">Effective Solutions <br>
+                <h2 class="hero-title">Effective Solutions <br>
                     for Your Business
-                </h1>
+                </h2>
                 <button type="button" class="btn-primary" data-modal-open>Order Service</button>
             </div>
         </section>
@@ -70,7 +140,7 @@
                                 <use href="./images/icons.svg#icon-antennae"></use>
                             </svg>
                         </div>
-                        <h3 class="title-list">Strategy</h3>
+                        <h2 class="title-list">Strategy</h2>
                         <p>Our goal is to identify the business<br>
                             problem to walk away with the<br>
                             perfect and creative solution.</p>
@@ -81,7 +151,7 @@
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="title-list">Punctuality</h3>
+                        <h2 class="title-list">Punctuality</h2>
                         <p>Bring the key message to the<br>
                             brand's audience for the best price<br>
                             within the shortest possible time.</p>
@@ -92,7 +162,7 @@
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="title-list">Diligence</h3>
+                        <h2 class="title-list">Diligence</h2>
                         <p>Research and confirm brands that<br>
                             present the strongest digital growth<br>
                             opportunities and minimize risk.</p>
@@ -103,7 +173,7 @@
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="title-list">Technologies</h3>
+                        <h2 class="title-list">Technologies</h2>
                         <p>Design practice focused on digital<br>
                             experiences. We bring forth a deep<br>
                             passion for problem-solving.</p>
@@ -400,9 +470,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-container footer-form">
+            <div class="footer-form">
                 <p class="footer-socials-title">Subscribe</p>
-                <form name="subscribe_form" autocomplete="on" method="">
+                <form class="subscribe-form" name="subscribe_form" autocomplete="on" method="">
                     <label class="footer-form_label">
 
                         <input type="email" name="email" placeholder="E-mail" class="footer-form-input" required />
@@ -483,6 +553,7 @@
         AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
