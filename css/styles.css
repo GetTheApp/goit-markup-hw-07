@@ -774,13 +774,17 @@ a.projects-link:focus {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 408px;
+    width: 100%;
 
     border-radius: 4px;
     background-color: var(--dairy);
 
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        width: 408px;
+    }
 }
 
 .modal-title {
@@ -1782,19 +1786,6 @@ a.projects-link:hover,a.projects-link:focus{
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal{
-    padding: 72px 24px 24px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 408px;
-   
-    border-radius: 4px;
-    background-color: var(--dairy);
-
-    transform: translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .modal-title{
     font-size: 16px;
